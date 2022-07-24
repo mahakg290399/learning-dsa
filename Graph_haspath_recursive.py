@@ -1,4 +1,4 @@
-#in cease we have acyclic graph 
+#when we have acyclic graph 
 def hasPath(graph, src, dst):
     if src == dst:
         return True
