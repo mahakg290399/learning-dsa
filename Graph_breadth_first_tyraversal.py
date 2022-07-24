@@ -1,4 +1,5 @@
 #itreative
+#directed Graph
 def breadth(graph, start):
     queue = [start]
     while len(queue) > 0:

@@ -1,4 +1,6 @@
 #when we have acyclic graph 
+#directed Graph
+
 def hasPath(graph, src, dst):
     if src == dst:
         return True

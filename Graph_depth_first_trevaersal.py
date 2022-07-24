@@ -1,3 +1,4 @@
+#directed Graph
 # def depth(graph0, start):
 #     stack = [start]
 #     while len(stack) > 0:
