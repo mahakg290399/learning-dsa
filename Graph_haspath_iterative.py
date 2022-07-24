@@ -1,6 +1,14 @@
 #when we have acyclic graph
 
 
+def hasPath(graph,src,dst):
+    queue = [src]
+    while len(queue)>0:
+        current = queue.pop(0)
+        if current == dst: return True
+        for neighbour in graph[current]:
+            queue.append(neighbour)
+    return False
 
 graphh = {
     'f':['g','h'],
