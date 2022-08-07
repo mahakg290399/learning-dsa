@@ -5,7 +5,6 @@ def explore(graph, current, visited):
 
     for neighbour in graph[current]:
         explore(graph,neighbour, visited)
-    
     return True
 
 
@@ -13,9 +12,9 @@ def connectedComponenetCount(graph):
     visited = set()
     count = 0
     for node in graph:
-        print("Visited: ", visited)
         if explore(graph, node,visited) == True: count+=1 
     return count
+
 
 graphh = {
     0:[8,1,5],
