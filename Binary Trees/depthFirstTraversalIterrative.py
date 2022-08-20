@@ -2,6 +2,7 @@ from locale import currency
 import binaryTree as bt
 
 def treeValues(node):
+    if not(node) : return False
     if node.val == None: return False
     stack=[node]
     
