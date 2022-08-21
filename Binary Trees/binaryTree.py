@@ -4,6 +4,7 @@ class Node:
         self.left = None
         self.right = None
 
+# For traversal
 a = Node('a')
 b = Node('b')
 c = Node('c')
@@ -17,12 +18,13 @@ b.left=d
 b.right=e
 c.right=f
 
+#for tree Sum
 nodeA = Node(3)
 nodeB = Node(11)
 nodeC = Node(4)
 nodeD = Node(4)
 nodeE = Node(2)
-nodeF = Node(1)
+nodeF = Node(6)
 
 nodeA.left = nodeB
 nodeA.right = nodeC
