@@ -8,9 +8,8 @@ def bredthFirstValues(node):
     while len(queue)>0:
         current = queue.pop(0)
         array.append(current.val)
-        if current.right: queue.append(current.right)
         if current.left: queue.append(current.left)
-        
+        if current.right: queue.append(current.right)    
     return array
 
 nodes = bredthFirstValues(bt.a)
