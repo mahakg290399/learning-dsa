@@ -1,0 +1,2 @@
+#Chintu has a long binary string ‘str’. A binary string is a string that contains only 0 and 1. He considers a string ‘beautiful’ if and only if the number of 0's and 1's in the string are equal.Now Chintu wants to split the string into substrings such that each substring is beautiful. Can you help Chintu to find the maximum number of beautiful strings he can split the string into? If it is not possible to split the string in such a way that all strings are beautiful, return -1.
+
