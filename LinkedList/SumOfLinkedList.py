@@ -13,4 +13,4 @@ def sumOfLinkedListRecursive(head, sum):
     return head.val + sumOfLinkedListRecursive(head.next, sum)
 
 print(sumOfLinkedListRecursive(node.a, sum))
-# print(sumOfLinkedListIterative(node.a))
+print(sumOfLinkedListIterative(node.a))
