@@ -8,9 +8,9 @@ def sumOfLinkedListIterative(head):
         current = current.next
     return sum
 
-def sumOfLinkedListRecursive(head, sum):
+def sumOfLinkedListRecursive(head):
     if not head : return 0
-    return head.val + sumOfLinkedListRecursive(head.next, sum)
+    return head.val + sumOfLinkedListRecursive(head.next)
 
-print(sumOfLinkedListRecursive(node.a, sum))
-print(sumOfLinkedListIterative(node.a))
+print(sumOfLinkedListRecursive(node.n1))
+print(sumOfLinkedListIterative(node.n1))
