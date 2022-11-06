@@ -5,8 +5,11 @@ def reverseLinkedListIterative(head):
     current = head
     prev = None
     while current:
+        #Temprary string the value of current.next into next
         next = current.next
+        #changing the direction of arrow
         current.next = prev
+        #moving ahead
         prev = current
         current = next
     return prev.val
