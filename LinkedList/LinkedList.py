@@ -86,11 +86,22 @@ class LinkedList:
         self.first = prev
         return prev.val
 
+    def getKthFromTheEnd(self,k):
+        #Index will start from 0
+        if k >= self.sizell(): return -1
+        a = self.first
+        b = self.first
+        for i in range(k):
+            b = b.next
+        while b != self.last:
+            a = a.next
+            b = b.next
+        return a.val
+
 ll = LinkedList()
-# ll.addlast(10)
-# ll.addlast(20)
-# ll.addlast(30)
-# ll.addlast(40)
-# ll.addlast(50)
-print(ll.reverseLinkedList())
-print(ll.toArray())
+ll.addlast(10)
+ll.addlast(20)
+ll.addlast(30)
+ll.addlast(40)
+ll.addlast(50)
+print(ll.getKthFromTheEnd(4))
