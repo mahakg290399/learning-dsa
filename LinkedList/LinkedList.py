@@ -47,13 +47,29 @@ class LinkedList:
             current=current.next
         self.last = prev
         self.last.next = None
-    
         
     def printll(self):
         current = self.first
         while current:
             print(current.val)
             current = current.next
+
+    def sizell(self):
+        count = 0
+        if not self.first : return count
+        current = self.first
+        while current:
+            current = current.next
+            count+=1
+        return count
+
+    def toArray(self):
+        result = []
+        current = self.first
+        while current:
+            result.append(current.val)
+            current = current.next
+        return result
         
 
 ll = LinkedList()
@@ -62,5 +78,4 @@ ll.addlast(20)
 ll.addlast(30)
 ll.addlast(40)
 ll.addlast(50)
-ll.removeLast()
-ll.printll()
+print(ll.toArray())
