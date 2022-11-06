@@ -71,11 +71,26 @@ class LinkedList:
             current = current.next
         return result
         
+    def reverseLinkedList(self):
+        if self.sizell() == 0: return -1
+        current = self.first
+        prev = None
+        while current:
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        
+        self.last = self.first
+        self.last.next = None
+        self.first = prev
+        return prev.val
 
 ll = LinkedList()
-ll.addlast(10)
-ll.addlast(20)
-ll.addlast(30)
-ll.addlast(40)
-ll.addlast(50)
+# ll.addlast(10)
+# ll.addlast(20)
+# ll.addlast(30)
+# ll.addlast(40)
+# ll.addlast(50)
+print(ll.reverseLinkedList())
 print(ll.toArray())
