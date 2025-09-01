@@ -48,8 +48,9 @@ def pattern_matching(pattern, source):
     # Sliding window approach
     for i in range(source_len - pattern_len + 1):
         # Compare boolean arrays directly
-        if all(char_types[i + j] == pattern_types[j] for j in range(pattern_len)):
-            count += 1
+        for j in range(pattern_len):
+            if all(char_types[i + j] == pattern_types[j]):
+                count += 1
             
     return count
 
